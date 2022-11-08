@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper {
+    float: right;
+    margin-top: 10px;
+}

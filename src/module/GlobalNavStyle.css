@@ -1,0 +1,14 @@
+nav {
+    width: 400;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  .nav2 {
+    text-decoration: none;
+  }
+  
+  a.active {
+    font-size: larger;
+    color: darkblue;
+  }
