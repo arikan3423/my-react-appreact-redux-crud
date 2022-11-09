@@ -16,6 +16,7 @@ export interface IUserState {
     list: IUser[],
     listStatus :ApiStatus,
     createUserFormStatus: ApiStatus;
+    updateUserFormStatus: ApiStatus
 }
 
 export const defaultList : IUser[] = [
@@ -33,4 +34,9 @@ export const defaultList : IUser[] = [
 export interface IUserForm {
     name: string;
     email: string;
+}
+export interface IUpdateUserActionProps {
+    id: number;
+    data: IUserForm
+
 }

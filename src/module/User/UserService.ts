@@ -10,4 +10,14 @@ export const getUserListApi = async () => {
 export const createUserApi = async (data: IUserForm) => {
 
    return await httpService.post<IUser>(ApiConfig.user, data)
+};
+
+export const deleteUserApi = async (id: number) => {
+    const url = `${ApiConfig.user}/${id}`
+    return await httpService.delete(ApiConfig.user)
+};
+
+export const updateUserApi = async(id : number, data : IUserForm) => {
+    const url = `${ApiConfig.user}/${id}`
+    return await httpService.put(url, data)
 }
